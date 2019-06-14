@@ -1,7 +1,7 @@
 <?php
 
 
-$dnaurl = "https://raw.githubusercontent.com/LafeLabs/page/master/data/dna.txt";
+$dnaurl = "https://raw.githubusercontent.com/LafeLabs/technicalpaper/master/data/dna.txt";
 $baseurl = explode("data/",$dnaurl)[0];
 $dnaraw = file_get_contents($dnaurl);
 $dna = json_decode($dnaraw);
@@ -9,6 +9,7 @@ $dna = json_decode($dnaraw);
 mkdir("iconsymbols");
 mkdir("data");
 mkdir("php");
+mkdir("figures");
 
 $oldscrollexists = false;
 if(file_exists("README.md")){
@@ -30,6 +31,13 @@ foreach($dna->iconsymbols as $value){
 foreach($dna->data as $value){
     
     copy($baseurl."data/".$value,"data/".$value);
+    
+}
+
+
+foreach($dna->figures as $value){
+    
+    copy($baseurl."figures/".$value,"figures/".$value);
     
 }
 

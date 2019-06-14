@@ -10,6 +10,9 @@
     "data": [
         "dna.txt"
     ],
+    "figures": [
+        "geometron.svg"
+    ],
     "php": [
         "dir.txt",
         "dnagenerator.txt",
