@@ -1,0 +1,25 @@
+{
+    "html": [
+        "README.md",
+        "index.html",
+        "pageeditor.html"
+    ],
+    "iconsymbols": [
+        "editor.svg"
+    ],
+    "data": [
+        "dna.txt"
+    ],
+    "php": [
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "mkdir.txt",
+        "mkmap.txt",
+        "pagelist.txt",
+        "replicator.txt",
+        "text2php.txt"
+    ]
+}
