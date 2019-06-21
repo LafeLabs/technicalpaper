@@ -10,6 +10,7 @@ mkdir("iconsymbols");
 mkdir("data");
 mkdir("php");
 mkdir("figures");
+mkdir("jupyter");
 
 $oldscrollexists = false;
 if(file_exists("README.md")){
@@ -38,6 +39,12 @@ foreach($dna->data as $value){
 foreach($dna->figures as $value){
     
     copy($baseurl."figures/".$value,"figures/".$value);
+    
+}
+
+foreach($dna->jupyter as $value){
+    
+    copy($baseurl."jupyter/".$value,"jupyter/".$value);
     
 }
 

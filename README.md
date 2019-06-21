@@ -50,7 +50,9 @@ Now you should see this document and can edit it, make your new paper, read that
 
 
 
+![](figures/python_figure1.png)
 
+![](figures/python_figure1.svg)
 
 
 

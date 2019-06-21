@@ -11,7 +11,12 @@
         "dna.txt"
     ],
     "figures": [
-        "geometron.svg"
+        "geometron.svg",
+        "python_figure1.png",
+        "python_figure1.svg"
+    ],
+    "jupyter": [
+        "jupyter1.ipynb"
     ],
     "php": [
         "dir.txt",

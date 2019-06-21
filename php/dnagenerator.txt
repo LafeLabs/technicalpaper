@@ -8,6 +8,7 @@
     $phpfiles = scandir(getcwd()."/php");
     $datafiles = scandir(getcwd()."/data");
     $figurefiles = scandir(getcwd()."/figures");
+    $jupyterfiles = scandir(getcwd()."/jupyter");
 
     $htmlfiles = [];
     foreach($files as $value){
@@ -43,7 +44,13 @@
         }
     }
 
-    
+    $dna->jupyter = [];
+    foreach($jupyterfiles as $value){
+        if($value{0} != "."){
+            array_push($dna->jupyter,$value);
+        }
+    }
+
     $dna->php = [];
     foreach($phpfiles as $value){
         if($value{0} != "."){
